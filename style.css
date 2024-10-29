@@ -165,8 +165,10 @@ body {
 }
 
 .back p {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.2em;
+  line-height: 1.1;
 }
 
 .card:hover .front {
@@ -175,49 +177,6 @@ body {
 
 .card:hover .back {
   transform: rotateY(360deg);
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  .back p {
-    font-size: 14px;
-    padding: 30px;
-  }
-
-  .card .title-vertical {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 480px) {
-  .back p {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .card {
-    max-height: 40vw;
-  }
-  .card img {
-  }
-  .img-about-us {
-    padding-top: 75px;
-  }
-  .back p {
-    padding: 0 50px;
-  }
-  .card .title-vertical {
-    font-size: 1em;
-  }
 }
 
 /* PRODUCT DESCRIPTION */
@@ -665,6 +624,23 @@ p {
   }
 }
 
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+
+  .card .title-vertical {
+    font-size: 1.5em;
+  }
+}
+
 @media (max-width: 700px) {
   .main-phrase {
     max-width: 45%;
@@ -675,6 +651,7 @@ p {
   .product-text {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
+
   }
 
   .product-title h3 {
@@ -699,28 +676,48 @@ p {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
-    font-size: 0.75em;
+    line-height: 1em;
+    font-size: 1.2em;
     gap: 0;
     padding: 1em 1em 0.5em 1em;
   }
 }
 
-@media (max-width: 537px) {
+@media (max-width: 567px) {
   .product-summary {
     padding: 0;
   }
+.back p {
+  font-size: 1.03em;
+  line-height: 1;
+}
 }
 
+
+
 @media (max-width: 480px) {
+   .card {
+    max-height: 40vw;
+  }
+  .card img {
+  }
+  .img-about-us {
+    padding-top: 75px;
+  }
+
+  .card .title-vertical {
+    font-size: 1em;
+  }
+  
   .footer-elements {
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas muy pequeñas */
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     padding-top: 20px;
   }
 
   .social-icons {
-    margin-top: 6em;
+    margin-top: 1em;
   }
   .contact-icono {
     width: 6%;
@@ -743,7 +740,8 @@ p {
   .back p {
     padding-left: 5px;
     padding-right: 5px;
-    font-size: 0.65em;
+    font-size: 1em;
+    line-height: 1em;
   }
   .product-title {
     font-size: 2em;
@@ -756,5 +754,10 @@ p {
     padding-left: 15px;
     font-size: 1.2em;
     line-height: 1.2em;
+  }
+  
+  .back p {
+    font-size: 0.7em;
+    padding: 1px;
   }
 }
