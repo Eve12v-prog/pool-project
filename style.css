@@ -126,7 +126,7 @@ body {
 .card .back {
   width: 100%;
   height: min(40vw, 300px);
-  background-color: #fff;
+  background-color: #ffffbf;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -512,6 +512,10 @@ details {
   font-family: "Josefin Sans", sans-serif;
 }
 
+details[open] {
+  margin-bottom: 0px;
+}
+
 .contact-grid {
   display: flex;
 
@@ -525,7 +529,8 @@ details {
   padding-top: 1%;
   width: 80%;
   margin: auto;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
+
 }
 
 .footer-message label {
@@ -743,7 +748,7 @@ p {
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas muy pequeñas */
     text-align: center;
     padding-bottom: 100px;
-    padding-top: 20px;
+    padding-top: 50px;
   }
 .footer-icons-copyright {
   padding-top: 50px;

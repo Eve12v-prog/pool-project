@@ -195,3 +195,18 @@ decreaseButton.addEventListener('click', () => {
 increaseButton.addEventListener('click', () => {
     updateQuantity(1);
 });
+
+
+const detailsElements = document.querySelectorAll('details');
+
+detailsElements.forEach(details => {
+    details.addEventListener('toggle', () => {
+        if (details.open) {
+            detailsElements.forEach(otherDetails => {
+                if (otherDetails !== details) {
+                    otherDetails.open = false;
+                }
+            });
+        }
+    });
+});
