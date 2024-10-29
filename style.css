@@ -13,6 +13,16 @@ body {
   position: relative;
 }
 
+.desktop-image {
+  display: block; /* Muestra la imagen grande por defecto */
+  width: 100%; /* Asegúrate de que ocupe todo el contenedor */
+}
+
+.mobile-image {
+  display: none; /* Oculta la imagen pequeña por defecto */
+  width: 100%; /* Asegúrate de que ocupe todo el contenedor */
+}
+
 .cover img {
   width: 100%;
 }
@@ -441,6 +451,8 @@ button {
 .contact-container {
   padding-top: 15%;
   padding-bottom: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 500px;
   background-image: url(img/pool-contact.png);
   background-size: cover;
@@ -460,12 +472,16 @@ button {
   margin: 0;
 }
 
+.contact-phone-email {
+margin-left: 10px;
+margin-right: 10px;
+}
+
 .contact-information {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+
   justify-content: center;
-  font-size: 35px;
+  font-size: 2.3em;
   align-items: center;
 }
 
@@ -475,7 +491,6 @@ button {
   width: 2em;
   height: 2em;
   text-align: center;
-  align-items: center;
   justify-content: center;
   margin: 0;
 }
@@ -639,15 +654,27 @@ p {
   .card .title-vertical {
     font-size: 1.5em;
   }
+
+
 }
 
 @media (max-width: 700px) {
-  .main-phrase {
-    max-width: 45%;
-    padding-left: 20px;
-    font-size: 1.5em;
-    padding-top: 5px;
-  }
+  .desktop-image {
+    display: none; /* Oculta la imagen grande */
+}
+
+.mobile-image {
+    display: block; /* Muestra la imagen pequeña */
+}
+
+.main-phrase {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 2.5em;
+  line-height: 1.1em;
+  padding-top: 5%;
+}
   .product-text {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
@@ -696,6 +723,8 @@ p {
 
 
 @media (max-width: 480px) {
+
+
    .card {
     max-height: 40vw;
   }
@@ -709,18 +738,22 @@ p {
     font-size: 1em;
   }
   
+
   .footer-elements {
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas muy pequeñas */
     text-align: center;
     padding-bottom: 100px;
     padding-top: 20px;
   }
+.footer-icons-copyright {
+  padding-top: 50px;
+}
 
   .social-icons {
     margin-top: 1em;
   }
   .contact-icono {
-    width: 6%;
+    width: 12%;
     margin-left: 0.3em;
   }
   .contact-paragraph {
@@ -737,6 +770,12 @@ p {
   .contact-tittle {
     font-size: 3em;
   }
+
+  .contact-information {
+font-size: 3em;
+height: 75px;
+  }
+
   .back p {
     padding-left: 5px;
     padding-right: 5px;
@@ -746,14 +785,13 @@ p {
   .product-title {
     font-size: 2em;
   }
+
+
 }
 
 @media (max-width: 425px) {
   .main-phrase {
-    max-width: 40%;
-    padding-left: 15px;
-    font-size: 1.2em;
-    line-height: 1.2em;
+    padding-top: 0px;
   }
   
   .back p {
