@@ -792,6 +792,7 @@ height: 75px;
 @media (max-width: 425px) {
   .main-phrase {
     padding-top: 0px;
+    font-size: 1.7em;
   }
   
   .back p {
