@@ -177,7 +177,7 @@ body {
 .back p {
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.1;
 }
 
@@ -672,6 +672,14 @@ p {
     display: block; /* Muestra la imagen pequeña */
 }
 
+.card-container {
+  width: 95%;
+}
+
+.back p {
+font-size: 1.3em;
+}
+
 .main-phrase {
   max-width: 100%;
   padding-left: 15px;
@@ -720,7 +728,7 @@ p {
     padding: 0;
   }
 .back p {
-  font-size: 1.03em;
+  font-size: 1.2em;
   line-height: 1;
 }
 }
@@ -728,13 +736,12 @@ p {
 
 
 @media (max-width: 480px) {
+.card-container {
+  width: 100%;
+}
 
 
-   .card {
-    max-height: 40vw;
-  }
-  .card img {
-  }
+
   .img-about-us {
     padding-top: 75px;
   }
@@ -782,10 +789,11 @@ height: 75px;
   }
 
   .back p {
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 1em;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 0.8em;
     line-height: 1em;
+    background-color: ;
   }
   .product-title {
     font-size: 2em;
@@ -801,7 +809,12 @@ height: 75px;
   }
   
   .back p {
-    font-size: 0.7em;
-    padding: 1px;
+  
+  }
+}
+
+@media (max-width: 425px) {
+  .main-phrase {
+    font-size: 1em;
   }
 }
